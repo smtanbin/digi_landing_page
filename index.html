@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>DigiBanking</title>
+        <link rel="stylesheet" href="./style.css" />
+        <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+    </head>
+
+    <body>
+        <nav class="nav">
+            <img src="./img/logo.svg" class="nav-img" alt="DigiBanking" />
+        </nav>
+
+
+        <div class="container">
+            <div class="wrapper">
+                <div class="col-1">
+                    <img data-aos="zoom-in" src="./img/phone.png" />
+                </div>
+                <div data-aos="fade-left" class="col-2">
+                    <h1>Your convenience our promise</h1>
+                    <br>
+                    <p>Download today & experience the new age of Banking</p>
+                    <br>
+                    <span class="btn-group">
+                        <a href="https://apps.apple.com/us/app/sbl-digibanking/id1212107605"><img class="btn"
+                                src="./img/store/apple.png" alt="" /></a>
+                        <a href="https://play.google.com/store/apps/details?id=com.cibl.sblmobilebanking&hl=en&gl=US"><img
+                                class="btn" src="./img/store/google.png" alt="" /></a>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <span>
+                <a href="https://www.standardbankbd.com/SblProfile.php">About</a>
+                <a href="https://www.standardbankbd.com/DigiBanking.php">Team & Condition</a>
+                <a href="https://www.standardbankbd.com/ContactUs.php?menuName=Contact%20Us">Contact</a>
+            </span>
+            <p>2024 &copy Standard Bank PLC.</p>
+        </div>
+        </div>
+        <script>
+            function getMobileOperatingSystem() {
+                var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+                if (/android/i.test(userAgent)) {
+                    window.location.href = "https://play.google.com/store/apps/details?id=com.cibl.sblmobilebanking&hl=en&gl=US";
+                }
+
+                if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+                    window.location.href = "https://apps.apple.com/us/app/sbl-digibanking/id1212107605";
+                }
+            }
+            getMobileOperatingSystem()
+
+
+        </script>
+
+    </body>
+
+</html>

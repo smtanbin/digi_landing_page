@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.nav {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  width: 100vw;
+  height: 50px;
+  background-color: #d8ffde42;
+  backdrop-filter: blur(10px); /* Adjust the blur radius as needed */
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+  z-index: 999; /* Ensure it's above other content */
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.nav-img {
+  padding: 5px;
+  height: 45px;
+}
+
+.container {
+  margin-top: 50px;
+  width: 100%;
+  /* height: calc(100vh - 150px);  */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  /* width: "100%"; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.col-1 {
+  text-align: center;
+}
+
+.col-1 img {
+  padding: 5%;
+  /* width: 40%; */
+  width: 300px;
+}
+
+.col-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+  font-family: "Comfortaa", sans-serif;
+  text-align: center;
+  padding: 15px 15px 15px 15px;
+}
+
+.col-2 h2 {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.btn-group {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.btn-group .btn {
+  height: 50px;
+  margin: 5px;
+  border: 2px black solid;
+  border-radius: 8px;
+}
+
+.footer {
+    margin-top: 50px;
+  padding: 100px;
+  height: 100px;
+  width: 100%;
+  background-color: #d8ffde;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer a {
+  text-decoration: solid;
+  font-family: sans-serif;
+  border-radius: 5px;
+  border: 1px rgb(22, 22, 22) solid;
+  background-color: #000000;
+  color: #ffffff;
+
+  padding: 8px;
+  margin: 3px;
+}
+.footer p {
+  text-decoration: solid;
+  font-family: sans-serif;
+  color: rgb(37, 37, 37);
+  padding: 8px;
+  margin-top: 30px;
+}
+
+/* Media Query for mobile */
+@media only screen and (max-width: 600px) {
+  .wrapper {
+    flex-direction: column;
+  }
+
+  .col-1,
+  .col-2 {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+
+  .footer a {
+    display: none;
+}
+.nav {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  width: 100vw;
+  height: 50px;
+  background-color: #d8ffde42;
+  backdrop-filter: blur(10px); /* Adjust the blur radius as needed */
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+  z-index: 999; /* Ensure it's above other content */
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+}
